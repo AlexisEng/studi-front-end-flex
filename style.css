@@ -1,6 +1,122 @@
 #container {
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
     height: 150px;
+}
+
+/* Gérer l'ordre de nos éléments enfants */
+/* nav:nth-child(1) {
+    order: 1;
+} */
+
+/* Gérer l'agrandissement (largeur) d'un élément enfant */
+/* nav:nth-child(1) {
+    color:white;
+    background-color:blue;
+
+    flex-grow: 1;
+
+}
+
+nav:nth-child(2) {
+    color: white;
+    background-color: brown;
+
+    flex-grow: 1;
+}
+
+nav:nth-child(3) {
+    background-color: chartreuse;
+
+    flex-grow: 8;
+} */
+
+
+/* Gérer le rétrécissement (largeur) d'un élément enfant */
+/* nav:nth-child(1) {
+    color:white;
+    background-color:blue;
+
+    flex-shrink: 1;
+
+}
+
+nav:nth-child(2) {
+    color: white;
+    background-color: brown;
+    
+    flex-shrink: 0;
+}
+
+nav:nth-child(3) {
+    background-color: chartreuse;
+    
+    flex-shrink: 2;
+} */
+
+/* Gérer la taille optimale avec flex-basis */
+/* nav:nth-child(1) {
+    color:white;
+    background-color:blue;
+
+    flex-basis: 100px;
+}
+
+nav:nth-child(2) {
+    color: white;
+    background-color: brown;
+    
+    flex-basis: 200px;
+}
+
+nav:nth-child(3) {
+    background-color: chartreuse;
+    
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 5;
+} */
+
+
+/* Raccourci pour flew-grow, shrink, basis */ 
+/* nav:nth-child(1) {
+    color:white;
+    background-color:blue;
+
+    flex: 0 1 100px;
+}
+
+nav:nth-child(2) {
+    color: white;
+    background-color: brown;
+    
+    flex: 0 1 200px;
+}
+
+nav:nth-child(3) {
+    background-color: chartreuse;
+   
+    flex: 1 5 300px;
+} */
+
+
+/* Gérer l'alignement d'un élément enfant */
+nav:nth-child(1) {
+    color:white;
+    background-color:blue;
+
+    align-self: flex-start;
+}
+
+nav:nth-child(2) {
+    color: white;
+    background-color: brown;
+
+    align-self: flex-end;
+    
+}
+
+nav:nth-child(3) {
+    background-color: chartreuse;
+   
+    align-self: center;
 }
