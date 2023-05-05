@@ -1,7 +1,15 @@
 #container {
     display: flex;
     height: 150px;
+    justify-content: center;
 }
+
+@media print and (max-width: 500px) {
+    #container {
+        flex-direction: column;
+    }
+}
+
 
 /* Gérer l'ordre de nos éléments enfants */
 /* nav:nth-child(1) {
@@ -103,20 +111,25 @@ nav:nth-child(3) {
 nav:nth-child(1) {
     color:white;
     background-color:blue;
+    height: 50px;
+    text-align: center;
 
-    align-self: flex-start;
+    flex-grow: 1;
 }
 
 nav:nth-child(2) {
     color: white;
     background-color: brown;
+    height: 50px;
+    text-align: center;
 
-    align-self: flex-end;
-    
+    flex-grow: 1;
 }
 
 nav:nth-child(3) {
     background-color: chartreuse;
-   
-    align-self: center;
+    height: 50px;
+    text-align: center;
+
+    flex-grow: 1;
 }
