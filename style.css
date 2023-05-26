@@ -1,79 +1,27 @@
-#container {
-    display: flex;
-    border: 5px solid black;
-}
+.container { border: 5px solid black; }
 
-.element:nth-child(1) {
-    background-color: aqua;
-    text-align: center;
+.element:nth-child(1) { background-color: aqua; }
 
-    flex-grow: 1;
-}
+.element:nth-child(2) { background-color: red; }
 
-.element:nth-child(2) {
-    background-color:brown;
-    color: white;
-    text-align: center;
+.element:nth-child(3) { background-color: green; }
 
-    flex-grow: 1;
-}
-
-.element:nth-child(3) {
-    background-color:bisque;
-    text-align: center;
-
-    flex-grow: 1;
-}
-
-.navBar {
-    margin-top: 25px;
-    background-color: lightgrey;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.navBar a {
-    padding: 20px;
-}
-
-#bigPart {
-    margin-top: 25px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
-@media (max-width: 480px) {
-    #container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .navBar {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    #bigPart {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+.navBar { background-color: lightgray; }
 
 @media (max-width: 480px) {
     h2 span:after {
         content: 'Téléphone';
+    }
+}
+
+@media (min-width: 480px) {
+    h2 span:after {
+        content: 'Tablette';
+    }
+}
+
+@media (min-width: 880px) {
+    h2 span:after {
+        content: 'Ordinateur';
     }
 }
